@@ -12,6 +12,9 @@ package com.kata.fizzbuzz;
 public class FizzBuzz {
     public String start(int number){
         if(number > 0){
+            if(number%3==0){
+                return "fizz";
+            }
             return String.valueOf(number);
         }
         return null;
