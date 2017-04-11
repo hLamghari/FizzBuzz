@@ -21,4 +21,8 @@ public class TestFizzBuzz {
     public void negativeTest(){
         MatcherAssert.assertThat(fizzBuzz.start(-1), is(equalTo(null)));
     }
+    @Test
+    public void defaultTest(){
+        MatcherAssert.assertThat(fizzBuzz.start(8), is(equalTo("8")));
+    }
 }
