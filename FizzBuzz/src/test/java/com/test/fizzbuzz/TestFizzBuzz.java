@@ -25,4 +25,8 @@ public class TestFizzBuzz {
     public void defaultTest(){
         MatcherAssert.assertThat(fizzBuzz.start(8), is(equalTo("8")));
     }
+    @Test
+    public void fizzTest(){
+        MatcherAssert.assertThat(fizzBuzz.start(3), is(equalTo("fizz")));
+    }
 }
