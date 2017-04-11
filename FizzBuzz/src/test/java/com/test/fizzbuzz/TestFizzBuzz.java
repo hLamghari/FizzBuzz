@@ -5,6 +5,7 @@
  */
 package com.test.fizzbuzz;
 
+import com.kata.fizzbuzz.FizzBuzz;
 import static org.hamcrest.CoreMatchers.equalTo;
 import org.hamcrest.MatcherAssert;
 import static org.hamcrest.core.Is.is;
@@ -15,7 +16,7 @@ import org.junit.Test;
  * @author hlamghari
  */
 public class TestFizzBuzz {
-    FizzBuzz fizzBuzz;
+    FizzBuzz fizzBuzz = new FizzBuzz();
     @Test
     public void negativeTest(){
         MatcherAssert.assertThat(fizzBuzz.start(-1), is(equalTo(null)));
